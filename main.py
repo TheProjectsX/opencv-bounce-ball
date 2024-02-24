@@ -1,7 +1,7 @@
 import cv2
 from scripts.yunet import YuNet
 import numpy as np
-from cvzone import overlayPNG
+from cvzone.Utils import overlayPNG
 import random
 import time
 import os
