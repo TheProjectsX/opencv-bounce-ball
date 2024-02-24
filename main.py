@@ -178,6 +178,7 @@ while cap_vid.isOpened():
     if (ballPosX <= gameBoardWR) or (ballPosX+ballWH >= FrameWidth-gameBoardWR):  # Hit the Walls
         ballSpeedX = -ballSpeedX
     if (ballPosY <= 0):  # Hit the Top
+        ballPosY = 10
         ballSpeedY = -ballSpeedY
         ballSpeedX = random.choice([ballSpeedX, -ballSpeedX])
     elif (ballPosY >= FrameHeight):  # Down in the Hell!
